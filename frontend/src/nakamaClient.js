@@ -6,7 +6,7 @@
 import { Client } from '@heroiclabs/nakama-js';
 
 const NAKAMA_SERVER_KEY = 'defaultkey';
-const NAKAMA_HOST = window.location.hostname === 'localhost' ? '127.0.0.1' : window.location.hostname;
+const NAKAMA_HOST = '127.0.0.1'; // Force connection to local Docker instance
 const NAKAMA_PORT = '7350';
 const NAKAMA_USE_SSL = false;
 

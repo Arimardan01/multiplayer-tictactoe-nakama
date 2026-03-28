@@ -337,7 +337,7 @@ let matchLoop: nkruntime.MatchLoopFunction<State> = function (
                 } else {
                     // Find winner user ID
                     let winnerUserId: string | null = null;
-                    if (state.winner && state.winner !== Mark.UNDEFINED) {
+                    if (state.winner) {
                         for (const uid of Object.keys(state.marks)) {
                             if (state.marks[uid] === state.winner) {
                                 winnerUserId = uid;

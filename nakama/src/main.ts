@@ -18,7 +18,7 @@ function InitModule(
             LEADERBOARD_ID,   // id
             true,             // authoritative (only server writes)
             nkruntime.SortOrder.DESCENDING,
-            nkruntime.Operator.INCREMENT,
+            nkruntime.Operator.INCREMENTAL,
             undefined,        // no reset schedule (persistent)
             undefined,        // no metadata
         );
